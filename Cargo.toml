@@ -1,0 +1,23 @@
+[package]
+name = "metrics-exporter-async_std"
+version = "0.1.0"
+authors = ["Lars Holznagel <info@lholznagel.info>"]
+edition = "2018"
+
+license = "MIT"
+
+description = "A metrics-core compatible exporter for serving metrics over HTTP using async_std."
+documentation = "https://docs.rs/metrics-exporter-async_std"
+homepage = "https://github.com/lholznagel/metrics-exporter-async_std"
+repository = "https://github.com/lholznagel/metrics-exporter-async_std"
+readme = "README.md"
+categories = ["development-tools::debugging"]
+keywords = ["metrics", "exporter", "http", "async_std"]
+
+[dependencies]
+async-std = "^1.5"
+metrics-core = "^0.5"
+
+[dev-dependencies]
+metrics-runtime = "^0.13"
+async-std = { version = "^1.5", features = ["attributes"] }
