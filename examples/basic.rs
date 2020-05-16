@@ -1,4 +1,4 @@
-use metrics_exporter_async_std::HttpExporter;
+use metrics_exporter_http_async_std::HttpExporter;
 use metrics_runtime::{Receiver, observers::YamlBuilder};
 
 #[async_std::main]
